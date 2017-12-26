@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		42D327D61FF2362900D99CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D327D51FF2362900D99CA2 /* AppDelegate.swift */; };
-		42D327D81FF2362900D99CA2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D327D71FF2362900D99CA2 /* FirstViewController.swift */; };
-		42D327DA1FF2362900D99CA2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D327D91FF2362900D99CA2 /* SecondViewController.swift */; };
 		42D327DD1FF2362900D99CA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D327DB1FF2362900D99CA2 /* Main.storyboard */; };
 		42D327DF1FF2362900D99CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D327DE1FF2362900D99CA2 /* Assets.xcassets */; };
 		42D327E21FF2362900D99CA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D327E01FF2362900D99CA2 /* LaunchScreen.storyboard */; };
 		42D327ED1FF2362900D99CA2 /* SlyReadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D327EC1FF2362900D99CA2 /* SlyReadTests.swift */; };
 		42D327F81FF2362900D99CA2 /* SlyReadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D327F71FF2362900D99CA2 /* SlyReadUITests.swift */; };
+		42D328061FF23B0E00D99CA2 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D328051FF23B0E00D99CA2 /* RootTabBarController.swift */; };
+		42D3280E1FF24AFE00D99CA2 /* BookShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3280C1FF24AFE00D99CA2 /* BookShelfController.swift */; };
+		42D3280F1FF24AFE00D99CA2 /* BookShelfController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D3280D1FF24AFE00D99CA2 /* BookShelfController.xib */; };
+		42D328111FF24B0900D99CA2 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D328101FF24B0900D99CA2 /* MyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,6 @@
 /* Begin PBXFileReference section */
 		42D327D21FF2362900D99CA2 /* SlyRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlyRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D327D51FF2362900D99CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42D327D71FF2362900D99CA2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		42D327D91FF2362900D99CA2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		42D327DC1FF2362900D99CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D327DE1FF2362900D99CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D327E11FF2362900D99CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		42D327F31FF2362900D99CA2 /* SlyReadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlyReadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D327F71FF2362900D99CA2 /* SlyReadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlyReadUITests.swift; sourceTree = "<group>"; };
 		42D327F91FF2362900D99CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D328051FF23B0E00D99CA2 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		42D3280C1FF24AFE00D99CA2 /* BookShelfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfController.swift; sourceTree = "<group>"; };
+		42D3280D1FF24AFE00D99CA2 /* BookShelfController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookShelfController.xib; sourceTree = "<group>"; };
+		42D328101FF24B0900D99CA2 /* MyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		42D327D41FF2362900D99CA2 /* SlyRead */ = {
 			isa = PBXGroup;
 			children = (
+				42D3280B1FF24AAC00D99CA2 /* My */,
+				42D3280A1FF24A8200D99CA2 /* BookShelf */,
+				42D328071FF2478A00D99CA2 /* extension */,
 				42D327D51FF2362900D99CA2 /* AppDelegate.swift */,
-				42D327D71FF2362900D99CA2 /* FirstViewController.swift */,
-				42D327D91FF2362900D99CA2 /* SecondViewController.swift */,
+				42D328051FF23B0E00D99CA2 /* RootTabBarController.swift */,
 				42D327DB1FF2362900D99CA2 /* Main.storyboard */,
 				42D327DE1FF2362900D99CA2 /* Assets.xcassets */,
 				42D327E01FF2362900D99CA2 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				42D327F91FF2362900D99CA2 /* Info.plist */,
 			);
 			path = SlyReadUITests;
+			sourceTree = "<group>";
+		};
+		42D328071FF2478A00D99CA2 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		42D3280A1FF24A8200D99CA2 /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				42D3280C1FF24AFE00D99CA2 /* BookShelfController.swift */,
+				42D3280D1FF24AFE00D99CA2 /* BookShelfController.xib */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
+		42D3280B1FF24AAC00D99CA2 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				42D328101FF24B0900D99CA2 /* MyController.swift */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D327E21FF2362900D99CA2 /* LaunchScreen.storyboard in Resources */,
+				42D3280F1FF24AFE00D99CA2 /* BookShelfController.xib in Resources */,
 				42D327DF1FF2362900D99CA2 /* Assets.xcassets in Resources */,
 				42D327DD1FF2362900D99CA2 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D327DA1FF2362900D99CA2 /* SecondViewController.swift in Sources */,
+				42D328061FF23B0E00D99CA2 /* RootTabBarController.swift in Sources */,
 				42D327D61FF2362900D99CA2 /* AppDelegate.swift in Sources */,
-				42D327D81FF2362900D99CA2 /* FirstViewController.swift in Sources */,
+				42D3280E1FF24AFE00D99CA2 /* BookShelfController.swift in Sources */,
+				42D328111FF24B0900D99CA2 /* MyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
